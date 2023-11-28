@@ -14,15 +14,14 @@
       src="https://kit.fontawesome.com/4f2112da87.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./SASS/style.css" />
   </head>
 
   <body>
-
-    <!-- header -->
+    <!-- Sections header -->
 
     <header>
-      <div class="logo-header">
+      <div class="header-logo">
         <a href="#"
           ><img src="./assets/images/logo/ohmyfood.png" alt="ohmyfood"
         /></a>
@@ -36,34 +35,116 @@
     </header>
 
     <main>
-
-        <!-- Section reservation -->
+      <!-- Section reservation -->
 
       <section class="reservation-container">
         <h1>Réservez le menu qui vous convient</h1>
         <p>
           Découvrez les restaurants d'exception, sélectionnés par nos soins.
-        </p>        
-        <a href="#" class="btn">Explorer nos restaurants</a>        
+        </p>
+        <a href="#" class="btn">Explorer nos restaurants</a>
       </section>
 
-      <section class="fonctionnement-container">
+      <!-- Section fonctionnement -->
+
+      <section class="fonctionnement">
+        <h2>Fonctionnement</h2>
         <div class="fonctionnement-steps">
-          <h2>Fonctionnement</h2>
-          <div class="fonctionnement-step-one">
-            <span class="step-number">1</span>
+          <article class="fonctionnement-steps-card">
+            <span>1</span>
             <i class="fa-solid fa-mobile-screen-button"></i>
-            <h5>Choisissez un resturant</h5>
+            <h3>Choississez un restaurant</h3>
+          </article>
+          <article class="fonctionnement-steps-card">
+            <span>2</span>
+            <i class="fa-solid fa-list-ul"></i>
+            <h3>Composez votre menu</h3>
+          </article>
+          <article class="fonctionnement-steps-card">
+            <span>3</span>
+            <i class="icon-store fa-solid fa-store"></i>
+            <h3>Dégustez au restaurant</h3>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section restaurants -->
+
+      <section class="restaurants">
+        <h2>Restaurants</h2>
+
+        <div class="restaurant-cards">
+          <div class="card-content">
+            <a href="#">
+              <img
+                src="Assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="img palette du gôut"
+              />
+              <div class="nouveau-container">
+                <div class="nouveau">
+                  <p>Nouveau</p>
+                </div>
+              </div>
+              <i class="empty fa-regular fa-heart"></i>
+              <i class="full fa-solid fa-heart"></i>
+              <div class="card-txt">
+                <h3>La palette du gôut</h3>
+                <p>Ménilmontant</p>
+              </div>
+            </a>
           </div>
-          <div class="fonctionnement-step-two">
-            <span class="step-number">2</span>
-            <i class="fa-solid fa-list"></i>
-            <h5>Composez votre menu</h5>
+
+          <div class="card-content">
+            <a href="#">
+              <img
+                src="Assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                class="imgnote"
+                alt="img La note enchantée"
+              />
+              <div class="nouveau-container">
+                <div class="nouveau">
+                  <p>Nouveau</p>
+                </div>
+              </div>
+              <i class="fa-regular fa-heart empty"></i>
+              <i class="fa-solid fa-heart full"></i>
+              <div class="card-txt">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+              </div>
+            </a>
           </div>
-          <div class="fonctionnement-step-three">
-            <span class="step-number">3</span>
-            <i class="fa-solid fa-store"></i>
-            <h5>Dégustez au restaurant</h5>
+
+          <div class="card-content">
+            <a href="#">
+              <img
+                src="Assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt="img a la francaise"
+              />
+
+              <i class="fa-regular fa-heart empty"></i>
+              <i class="fa-solid fa-heart full"></i>
+              <div class="card-txt">
+                <h3>A la française</h3>
+                <p>Cité Rouge</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card-content">
+            <a href="#">
+              <img
+                src="Assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="img delice des sens"
+              />
+
+              <i class="fa-regular fa-heart empty"></i>
+              <i class="fa-solid fa-heart full"></i>
+              <div class="card-txt">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>

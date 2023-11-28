@@ -1,0 +1,229 @@
+@import "elements/_variables.scss";
+@import "elements/mixins";
+
+
+
+body {
+    
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    background-color: $backgroundcolor;
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+header {
+    .header-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 38, 0.15);
+        position: relative;
+
+        img {
+            width: 162px;    
+            padding: 14px 0px 13px 0px;
+            margin-top: 14px;
+        }
+    }
+
+    .location {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 17px;    
+        height: 50px;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: #EAEAEA; 
+    }
+}
+
+.reservation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {    
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+        margin: 39px 42px 0 58px;
+    }
+
+    p {    
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        text-align: center; 
+        margin: 21px 34px 0 26px;   
+    }
+
+    .btn {
+        @include btn;
+    }
+}
+
+.fonctionnement {
+    background-color: $white;
+	padding-left: 20px;
+	padding-bottom: 68px;
+	h2 {
+		padding-top: 48px;
+	}
+}
+
+.fonctionnement-steps {
+	margin: 26px 20px 0 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.fonctionnement-steps-card {
+    display: flex;
+	align-items: center;
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+	background: #F7F7F7;
+	border-radius: 20px;
+	gap: 23px;
+
+    h3 {
+        padding: 28.59px 20px 28.12px 0px;
+        height: 15.67px;
+        margin: 0;   
+    }
+
+span {
+    background: $Purple;
+		border-radius: 50%;
+		width: 24px;
+		height: 24px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $WhiteSmoke;
+		font-size: 14.18px;
+		position: relative;
+		margin-left: -12.51px;
+    }
+
+    i {
+        color: $Grey;
+    }
+    
+    i #icon-store {
+        color: #9456DC;
+    }
+}
+
+
+
+/* Restaurants */
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-bottom: 50px;
+
+    h2 {
+        margin-left: 25px;
+        margin-bottom: 0px;
+        margin-top: 40px;
+        font-size: 24px;
+    }
+
+    .card-content {
+                 
+        border-radius: 15px;
+        position: relative;
+        margin: 20px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+        padding-bottom: 20px;
+
+        img {
+            height: 231px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .nouveau {
+            position: absolute;
+            top: 0%;
+            right: 5%;
+        }
+
+        .nouveau-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 25px;
+
+            p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 30px;
+                padding: 5px 15px;
+                color: $Viridian;
+                background-color: $LightGreen;
+                border-radius: 5%;
+                
+
+            }
+        }
+
+
+
+        .card-txt {            
+                        
+            
+
+            h3 {
+                display: inline-block;
+                margin: 20px 0 0 15px;
+                border-radius: 20px 20px 0 0;
+
+            }
+
+            p {
+                margin: 5px 0 0 17px;
+            }
+        }
+
+        .empty {
+            position: absolute;
+            top: 83%;
+            right: 10%;
+            transform: translateY(-50%);
+            font-size: 25px;
+            cursor: pointer;       
+        }
+
+        .full {
+            position: absolute;
+            top: 83%;
+            right: 10%;
+            transform: translateY(-50%);
+            font-size: 25px;
+            cursor: pointer;
+            opacity: 0;
+        }
+
+}
+}

@@ -1,0 +1,16 @@
+@mixin text-font{
+    font-family: roboto;
+}
+
+@mixin btn {
+        border-radius: 25px;
+        display: inline-block;
+        padding: 16px 19px;
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 16px;   
+        cursor: pointer;
+        margin: 27px 0 57px 0;      
+        background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
