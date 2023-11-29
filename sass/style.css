@@ -8,6 +8,7 @@ body {
 
 h3 {
   font-size: 16px;
+  font-weight: 700;
 }
 
 a {
@@ -45,7 +46,7 @@ header .location {
   justify-content: center;
   align-items: center;
 }
-.reservation-container h1 {
+.reservation-container h2 {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -117,7 +118,7 @@ header .location {
 .fonctionnement-steps-card i {
   color: #7E7E7E;
 }
-.fonctionnement-steps-card i #icon-store {
+.fonctionnement-steps-card i .icon-store {
   color: #9456DC;
 }
 
@@ -172,6 +173,7 @@ header .location {
   display: inline-block;
   margin: 20px 0 0 15px;
   border-radius: 20px 20px 0 0;
+  font-weight: 700;
 }
 .restaurants .card-content .card-txt p {
   margin: 5px 0 0 17px;
@@ -192,4 +194,38 @@ header .location {
   font-size: 25px;
   cursor: pointer;
   opacity: 0;
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 0 33px 25px;
+  background: #353535;
+  color: #FFF;
+  gap: 16px;
+}
+footer .footer-logo img {
+  filter: invert(1);
+  width: 139px;
+  height: 21px;
+}
+footer p {
+  margin: 0;
+  font-weight: 500;
+}
+footer .footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 0px;
+}
+footer .footer-list a {
+  color: #FFF;
+  font-weight: 400;
+}
+footer .footer-list .footer-icon-txt {
+  display: flex;
+  align-items: center;
+  gap: 11px;
 }/*# sourceMappingURL=style.css.map */
