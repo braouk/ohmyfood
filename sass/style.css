@@ -11,6 +11,11 @@ h3 {
   font-weight: 700;
 }
 
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -37,7 +42,7 @@ header .location {
   height: 50px;
   font-size: 16px;
   font-weight: 500;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 
 .reservation-container {
@@ -93,7 +98,7 @@ header .location {
   display: flex;
   align-items: center;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  background: #F7F7F7;
+  background: #f7f7f7;
   border-radius: 20px;
   gap: 23px;
 }
@@ -118,8 +123,8 @@ header .location {
 .fonctionnement-steps-card i {
   color: #7E7E7E;
 }
-.fonctionnement-steps-card i .icon-store {
-  color: #9456DC;
+.fonctionnement-steps-card #store-icon {
+  color: #9356DC;
 }
 
 /* Restaurants */
@@ -169,38 +174,47 @@ header .location {
   background-color: #99E2D0;
   border-radius: 5%;
 }
-.restaurants .card-content .card-txt h3 {
+.restaurants .card-content .card-txt h4 {
   display: inline-block;
-  margin: 20px 0 0 15px;
+  margin: 20px 0 0 13px;
   border-radius: 20px 20px 0 0;
   font-weight: 700;
+  font-size: 18px;
 }
 .restaurants .card-content .card-txt p {
-  margin: 5px 0 0 17px;
+  font-size: 17px;
+  font-weight: 300;
+  margin: 5px 0 0 13px;
 }
 .restaurants .card-content .empty {
   position: absolute;
   top: 83%;
-  right: 10%;
-  transform: translateY(-50%);
+  right: 5%;
   font-size: 25px;
   cursor: pointer;
 }
 .restaurants .card-content .full {
   position: absolute;
   top: 83%;
-  right: 10%;
-  transform: translateY(-50%);
+  right: 5%;
   font-size: 25px;
   cursor: pointer;
   opacity: 0;
+  transition: 300ms ease-in-out;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.restaurants .card-content .full:hover {
+  color: transparent;
+  background-image: linear-gradient(10deg, #FF79DA, #9356DC);
+  opacity: 1;
 }
 
 /* footer */
 footer {
   display: flex;
   flex-direction: column;
-  padding: 22px 0 33px 25px;
+  padding: 22px 25px;
   background: #353535;
   color: #FFF;
   gap: 16px;
@@ -212,7 +226,6 @@ footer .footer-logo img {
 }
 footer p {
   margin: 0;
-  font-weight: 500;
 }
 footer .footer-list {
   display: flex;
@@ -228,4 +241,8 @@ footer .footer-list .footer-icon-txt {
   display: flex;
   align-items: center;
   gap: 11px;
+}
+footer .footer-list .footer-icon-txt p {
+  margin: 0;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
