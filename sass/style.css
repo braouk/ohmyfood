@@ -77,6 +77,10 @@ header .location {
   margin: 27px 0 57px 0;
   background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
+.reservation-container .btn:hover {
+  background: linear-gradient(#ff90e7, #a16eff);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
 
 .fonctionnement {
   background-color: #FFF;
@@ -98,7 +102,7 @@ header .location {
   display: flex;
   align-items: center;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  background: #f7f7f7;
+  background: #EAEAEA;
   border-radius: 20px;
   gap: 23px;
 }
@@ -106,6 +110,7 @@ header .location {
   padding: 28.59px 20px 28.12px 0px;
   height: 15.67px;
   margin: 0;
+  cursor: pointer;
 }
 .fonctionnement-steps-card span {
   background: #9356DC;
@@ -245,4 +250,52 @@ footer .footer-list .footer-icon-txt {
 footer .footer-list .footer-icon-txt p {
   margin: 0;
   font-weight: 500;
+}
+
+@media (min-width: 1025px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 81px;
+  }
+  .fonctionnement-steps {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+  }
+  .fonctionnement-steps-card {
+    width: 33%;
+  }
+  .restaurants {
+    margin-top: 0;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .restaurants .restaurant-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .restaurants .restaurant-cards .card-content {
+    width: 45%;
+  }
+  footer {
+    width: auto;
+    height: 114px;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+  footer .footer-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  footer .footer-list a {
+    display: block;
+    width: 130px;
+  }
 }/*# sourceMappingURL=style.css.map */

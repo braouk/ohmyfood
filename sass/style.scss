@@ -4,7 +4,7 @@
 body {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
-  background-color: $backgroundcolor;
+  background-color: $whitesmoke;
   margin: 0px;
   padding: 0px;
 }
@@ -76,7 +76,12 @@ header {
 
   .btn {
     @include btn;
-  }
+      &:hover {
+        background: linear-gradient(#ff90e7, #a16eff);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    }
+    }
+  
 }
 
 .fonctionnement {
@@ -99,7 +104,7 @@ header {
   display: flex;
   align-items: center;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  background: #f7f7f7;
+  background: $lightgrey;
   border-radius: 20px;
   gap: 23px;
 
@@ -107,28 +112,30 @@ header {
     padding: 28.59px 20px 28.12px 0px;
     height: 15.67px;
     margin: 0;
+    cursor: pointer;
   }
+  
 
   span {
-    background: $Purple;
+    background:$purple;
     border-radius: 50%;
     width: 24px;
     height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $WhiteSmoke;
+    color: $whitesmoke;
     font-size: 14.18px;
     position: relative;
-    margin-left: -12.51px;
+    margin-left: -12.51px;    
   }
 
   i {
-    color: $Grey;
+    color: $grey;
   }
 
   #store-icon {
-    color: $Purple;
+    color: $purple;
   }
 }
 
@@ -178,8 +185,8 @@ header {
         align-items: center;
         height: 30px;
         padding: 5px 15px;
-        color: $Viridian;
-        background-color: $LightGreen;
+        color: $viridian;
+        background-color: $lightgreen;
         border-radius: 5%;
       }
     }
@@ -220,7 +227,7 @@ header {
 
       &:hover {
         color: transparent;
-        background-image: linear-gradient(10deg, $rose, $Purple);        
+        background-image: linear-gradient(10deg, $rose, $purple);        
         opacity: 1;
     }
   
@@ -234,7 +241,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 22px 25px;
-  background: $DarkGrey;
+  background: $darkgrey;
   color: $white;
   gap: 16px;
 
@@ -270,4 +277,67 @@ footer {
       }
     }
   }
+}
+
+@media (min-width:1025px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 81px;
+
+}
+
+.fonctionnement-steps {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+
+.fonctionnement-steps-card {
+    width: 33%;
+}
+
+
+.restaurants {
+  margin-top: 0;
+  padding-left: 150px;
+  padding-right: 150px;
+
+.restaurant-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+      .card-content {
+        width: 45%;
+      }
+
+}
+}
+
+footer {
+
+width: auto;
+height: 114px;
+padding: 30px 25px;
+display: flex;
+flex-direction: row-reverse;
+align-items: flex-end;
+
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+
+  a {
+    display: block;
+    width: 130px;
+  }
+}
+}
 }
